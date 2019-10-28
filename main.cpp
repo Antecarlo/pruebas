@@ -17,7 +17,7 @@ public:
 	Hilo(int n=5,int tiempo=1):n(n),tiempo(tiempo){}
 	void operator()(){
 		for(int i=0;i<this->n;i++){
-			std::cout << "Operator() mensaje "<< (i+1) << std::endl;
+			std::cout << " Operator() mensaje "<< (i+1) << std::endl;
 			std::this_thread::sleep_for(std::chrono::seconds(this->tiempo));
 		}
 	}
